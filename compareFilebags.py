@@ -1,4 +1,4 @@
-#!/usr/bin/env/python
+#!/usr/bin/env python
 
 import os,sys
 
@@ -18,7 +18,7 @@ def parseManifest(path):
 hs1 = set(h1)
 fs1 = set(f1)
 
-hs2 = set(hs2)
+hs2 = set(h2)
 fs2 = set(f2)
 
 hs12 = hs1.issubset(hs2)
@@ -26,15 +26,26 @@ hs21 = hs2.issubset(hs1)
 
 if hs12 and hs21:
     print("A and B have identical file contents")
-else if hs12:
+elif hs12:
     print("A's file contents is a subset of B's file contents")
-else if hs21:
+elif hs21:
     print("B's file contents is a subset of A's file contents")
 else:
     print("No simple relationship between A and B's file conents")
 
 fs12 = fs1.issubset(fs2)
 fs21 = fs2.issubset(fs1)
+
+
+if fs12 and fs21:
+    print("A and B have identical file names")
+elif fs12:
+    print("A's file names is a subset of B's file names")
+elif fs21:
+    print("B's file names is a subset of A's file names")
+else:
+    print("No simple relationship between A and B's file names")
+
 
 
 
