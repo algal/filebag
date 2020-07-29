@@ -34,7 +34,7 @@ elif fs12:
 elif fs21:
     print("B's file names is a subset of A's file names")
 else:
-    print("No containment relationship between A and B's file names.\n Intersction: {}\n Items: {}".format(len(fsint),sorted(list(fsint))))
+    print("No containment relationship between A and B's file names.\n Intersection: {}\n Items: {}".format(len(fsint),sorted(list(fsint))))
 
 print("")
 
@@ -51,5 +51,5 @@ elif hs12:
 elif hs21:
     print("B's file contents is a subset of A's file contents")
 else:
-    print("No containment relationship between A and B's file contents.\n Intersction: {}\n Items: {}".format(len(hsint),sorted(list(hsint))))
+    print("No containment relationship between A and B's file contents.\n Interesction: {}\n Items: {}".format(len(hsint),sorted(list(hsint))))
 
