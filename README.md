@@ -12,7 +12,7 @@ Once you have a file bag, you can perform the following operations by running `f
 
 2. Check if every file name uniquely identifies file contents. If not, then the same file name is being used to identify different file contents at different paths.
 
-However, beware: these file contents checks are done only by looking at MD5 hashes, so they will rarely fail due to different files hashing to the same value.
+However, beware: these file contents checks are done only by looking at MD5 hashes, so they will occasionally (but rarely) fail when different files yield the same hash value.
 
 Once you have two manifests for file bags A and B, you run `filebag_compare.py` to answer the following questions regarding the file names and regarding file contents in A and B? 
 
