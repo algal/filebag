@@ -4,7 +4,7 @@ A "file bag" is a manifest describing a collection of paths to jpg files on disk
 
 You create a filebag manifest by running:
 
-    ./filebag_make.bash /path/to/root/of/images
+    ./filebag_make.bash /path/to/root/of/images > mypath.filebag
 
 Once you have a file bag, you can perform the following operations by running `filebag_check.py`:
 
