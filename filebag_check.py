@@ -21,10 +21,6 @@ def parseManifest(path):
 
 (h1,p1,f1) = parseManifest(sys.argv[1])
 
-hash_count = len(set(h1))
-fname_count =  len(set(f1))
-path_count =  len(set(p1))
-
 print("entries: {}".format(len(h1)))
 print("unique fcontents: {}".format(len(set(h1))))
 print("unique fnames: {}".format(len(set(f1))))
