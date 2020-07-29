@@ -1,5 +1,9 @@
 # Filebag tools
 
+The file bag scripts are for managing large quantities of image files, by helping you to verify if files are unnecessarily duplicated within a directory or across different sets of directories, or if the same images appears repeatedly under different file names.
+
+## How to use
+
 A "file bag" is a manifest describing a collection of paths to jpg files on disk.
 
 You create a filebag manifest by running:
