@@ -8,8 +8,8 @@ def parseManifest(path):
     (hashes,paths,fnames) = ([],[],[])
     for line in lines:
         hashes.append(line[0])
-        paths.append(line[1])
-        fnames.append(os.path.basename(line[1]).rstrip("\n"))
+        paths.append(line[1].rstrip("\n"))
+        fnames.append(os.path.basename(line[1].rstrip("\n")))
     return (hashes,paths,fnames)
 
 (h1,p1,f1) = parseManifest(sys.argv[1])
