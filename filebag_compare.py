@@ -30,9 +30,9 @@ if len(fsint) == 0:
 elif fs12 and fs21:
     print("A and B have identical file names")
 elif fs12:
-    print("A's file names is a subset of B's file names")
+    print("The file names in A {} are a subset of the file names in B {}".format(sys.argv[1],sys.argv[2]))
 elif fs21:
-    print("B's file names is a subset of A's file names")
+    print("The file names in B {} are a subset of the file names in A {}".format(sys.argv[2],sys.argv[1]))
 else:
     print("No containment relationship between A and B's file names.\n Intersection: {}\n Items: {}".format(len(fsint),sorted(list(fsint))))
 
