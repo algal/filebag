@@ -30,9 +30,9 @@ if len(fsint) == 0:
 elif fs12 and fs21:
     print("A and B have identical file names")
 elif fs12:
-    print("The file names in A {} are a subset of the file names in B {}".format(sys.argv[1],sys.argv[2]))
+    print("The file names in A ({}) are a subset of the file names in (B) {}".format(sys.argv[1],sys.argv[2]))
 elif fs21:
-    print("The file names in B {} are a subset of the file names in A {}".format(sys.argv[2],sys.argv[1]))
+    print("The file names in B ({}) are a subset of the file names in (A) {}".format(sys.argv[2],sys.argv[1]))
 else:
     print("No containment relationship between A and B's file names.\n Intersection: {}\n Items: {}".format(len(fsint),sorted(list(fsint))))
 
@@ -47,9 +47,9 @@ if len(hsint) == 0:
 elif hs12 and hs21:
     print("A and B have identical file contents")
 elif hs12:
-    print("A's file contents is a subset of B's file contents")
+    print("The file contents in A ({}) are a subset of the file contents in (B) {}".format(sys.argv[1],sys.argv[2]))
 elif hs21:
-    print("B's file contents is a subset of A's file contents")
+    print("The file contents in B ({}) are a subset of the file contents in (A) {}".format(sys.argv[2],sys.argv[1]))
 else:
     print("No containment relationship between A and B's file contents.\n Interesction: {}\n Items: {}".format(len(hsint),sorted(list(hsint))))
 
